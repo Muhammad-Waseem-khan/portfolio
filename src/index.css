@@ -1,0 +1,355 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  background: fixed;
+  
+}
+
+.navbar{
+
+  padding: 0.625rem 10%;
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+  margin-top: 1.625rem;
+
+}
+
+.logo{
+  cursor: pointer;
+  order: 1;
+  font-family: 'Chango', cursive;
+  color: aqua;
+  font-size:1.563rem;
+}
+
+.logo h3:hover{
+  transform: rotate(360deg);
+  
+transition: transform .7s ease-in-out;
+}
+.navbar-items{
+  order: 2;
+}
+.navbar-items ul{
+  list-style: none;
+}
+
+.navbar-items ul li{
+  display: inline-block;
+  padding: 0  1.563rem;
+  cursor: pointer;
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  
+}
+
+
+.navbar-items ul li a{
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: black  ;
+}
+
+.navbar-items ul li a:hover{
+  color:cyan;
+  transition: 0.5s;
+  
+
+}
+
+/* Now some styling for main page */
+
+
+.main{
+  
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  width: 100%;
+  
+  margin-top: 1.875rem;
+}
+
+.image{
+
+ padding: 10px 10%;
+ width:80%;
+ margin-left:8.75rem;
+ margin-top: 1.25rem;
+
+}
+
+.main-des{
+  margin-top: 6.25rem;
+ 
+  padding: 0px 1.25rem;
+  margin-left: 3.75rem;
+}
+
+
+.btn-1{
+  margin-top: 0.625rem;
+  padding: 0px 1.25rem;
+  color: aqua;
+  width: 80%;
+  height: 2.5rem;
+  border-radius: 3.125rem 1.25rem; 
+  border: 0.125rem solid black;
+  font-size:0.938rem;
+  
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Kiwi Maru', serif;
+  
+  
+}
+.btn-1 a{
+  text-decoration: none;
+  color:black;
+}
+.btn-1 a:hover{
+  color: cyan;
+  transition: 1s ease;
+}
+
+
+.main-des h2{
+  text-transform: uppercase;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 1.875rem;
+}
+
+.mwk{
+  text-transform: capitalize;
+  color: aqua;
+  font-family: 'Chango', cursive;
+}
+
+
+.main-des h4{
+  font-size: 1.25;
+  font-family: 'Kiwi Maru', serif;
+}
+
+/* Services Page Desiging  */
+
+.service h1{
+  justify-content: center;
+  display: flex;
+  font-family: 'Kiwi Maru', serif;
+  margin-top: 2rem;
+
+}
+
+.grid {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: stretch;
+  
+  }
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  border-radius: 3px;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+  margin-top: 2rem;
+}
+
+.grid > article:hover{
+  transition: transform .1s ease-out;
+  transform: translateY(5px);
+}
+
+.grid > article img {
+  width: 100%;
+  height: 15rem;
+}
+
+
+.text {
+  padding: 0 20px 20px;
+}
+.text  a{
+  text-decoration: none;
+}
+.text > h3{
+  text-transform: uppercase;
+}
+.text button a{
+  text-decoration: none;
+  color: black;
+}
+.text > button {
+  /* background: linear-gradient(to right, #f030a7, #f0308d, #f03061); */
+  border-radius: 3px;
+  background: cyan;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+article a{
+  text-decoration: none;
+}
+
+/* styling for about me page */
+.about-tag h1{
+  justify-content: center;
+  display: flex;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  font-family:'Kiwi Maru', serif; 
+}
+.main-about{
+  width: 80%;
+  height: 100vh;
+  /* background: orange; */
+  height: 100vh;
+  margin-left: 10rem;
+  justify-content: space-between;
+  
+}
+
+.profile-image{
+  width: 30%;
+  height: 20%;
+  float: right;
+ 
+}
+
+.profile-image img{
+  border-radius: 20rem;
+  width: 100%;
+  height: 20rem;
+  /* border:0.1rem solid orange; */
+
+}
+.about-content{
+  justify-content: center;
+  width: 60%;
+  word-spacing: 1rem;
+  
+}
+.about-content hr{
+  width: 20%;
+  border: 1px solid orange;
+
+}
+.about-content h2{
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2px;
+  font-family: 'Kiwi Maru', serif;
+  color: orange;
+  
+}
+
+.about-content h3{
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.about-content p{
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.btn-about{
+  width:30%;
+  height: 2rem;
+  font-family: 'Kiwi Maru', serif;
+  border: 0.15rem solid black;
+  font-size: 1.2rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  border-radius: 2rem 5rem;
+  margin-top: 2rem;
+  
+
+}
+
+.btn-about a{
+  text-decoration: none;
+  color: black;
+
+}
+.btn-about a:hover{
+  color: cyan;
+}
+
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+  .main{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+  
+}
+
+@media (max-width: 500px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    .main{
+      grid-template-columns: repeat(1 1fr);
+      margin: 0;
+    }
+   
+  }
+
+  .grid > article{
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 500px){
+  .main{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .grid{
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+@media(max-width:998px){
+  html{font-size: 65%;}
+}
+
+@media(max-width:750px){
+  html{font-size: 55%;}
+}
+
+
+@media(max-width:450px){
+  html{font-size: 45%;}
+}
+
